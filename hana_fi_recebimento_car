@@ -25,7 +25,6 @@ select
 	--status(calculo),
 from bseg
 	left join kna1 on bseg.kunnr = kna1.kunnr
-	--left join bsad on bseg.augbl = bsad.augbl and bseg.kunnr = bsad.kunnr and bsad.xragl <> 'X' and bsad.blart not in ('DZ', 'ZB', 'ZR') and bsad.budat is not null
 where bseg.h_blart in ('DZ', 'ZB', 'ZR')
 	and bseg.shkzg = 'H'
 	and bseg.xragl <> 'X'
