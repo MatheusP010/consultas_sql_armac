@@ -30,4 +30,3 @@ where bseg.h_blart in ('DZ', 'ZB', 'ZR')
 	and bseg.shkzg = 'H'
 	and bseg.xragl <> 'X'
 	and bseg.nebtr > 0
-	--and bseg.augdt > '2024-12-31'
