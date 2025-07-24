@@ -36,7 +36,7 @@ SELECT
  BSEG.BELNR AS "N. Doc Contabil",
  TO_DATE(VATC.ERDAT, 'YYYY-MM-DD') AS "Data Criação",
  TO_DATE(VATC.FKDAT, 'YYYY-MM-DD') AS "Data Faturamento",
- TO_CHAR(TO_DATE(VATC.FKDAT, 'YYYY-MM-DD'), 'YYYY-MM-01') AS "Mês Contábil",
+ TO_DATE(TO_CHAR(VATC.FKDAT, 'YYYY-MM-01'), 'YYYY-MM-DD') AS "Mês Contábil",
  VATI.POSNR AS "N. Item",
  VATI.MATNR AS "N. Material",
  VATI.ARKTX AS "Descrição do Material",
