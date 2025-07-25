@@ -163,7 +163,7 @@ FROM
     INNER join kna1 on ctr.kunnr_ana = kna1.kunnr
 	inner join vbak on ctr.vbeln = vbak.vbeln and vbak.vbtyp = 'G' 
 	INNER JOIN vbkd ON vbkd.vbeln = ctr.vbeln AND vbkd.posnr = '000000'
-	LEFT join ZSDT0001 on ZSDT0001.vbeln = ctr.vbeln and ZSDT0001.posnr = ctr.posnr
+	LEFT join ZSDT0001 on ZSDT0001.vbeln = ctr.vbeln and ZSDT0001.posnr = ctr.posnr and ZSDT0001.charg = ctr.charg
 	LEFT JOIN ultima_modificacao um ON ctr.vbeln = um.Id  
 	left join veda dtcbc on ctr.vbeln = dtcbc.vbeln and dtcbc.vposn = '000000'
 	left join veda dtitem on ctr.vbeln = dtitem.vbeln and ctr.posnr = dtitem.vposn
