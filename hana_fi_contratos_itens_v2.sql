@@ -1,3 +1,5 @@
+--drop materialized view fi_contratos_itens_v2;
+
 create materialized view fi_contratos_itens_v2 
 as  WITH condicao as (
    SELECT 
