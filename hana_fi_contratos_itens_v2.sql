@@ -43,7 +43,7 @@ SELECT
     vbak.ernam as "Criador",
     vbak.erdat AS "Data Criação",
     dtcbc.vinsdat as "Data Instalação",
-    dtcbc.vuntdat AS "Data Assinatura",
+    TO_DATE(dtcbc.vuntdat, 'YYYY-MM-DD') AS "Data Assinatura",
     TO_DATE(dtcbc.vbegdat, 'YYYY-MM-DD') AS "Início Contrato",
     TO_DATE(dtcbc.venddat, 'YYYY-MMM-DD') AS "Fim Contrato",
     TO_DATE(dtcbc.vdemdat, 'YYYY-MM_DD') as "Data Desmontagem",
