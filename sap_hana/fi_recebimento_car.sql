@@ -12,8 +12,8 @@ select
 	bseg.dmbtr as montante_fatura,
 	bseg.nebtr as valor_pago,
 	bseg.h_blart as tipo_lancamento,
-	bseg.augdt as Data_compensacao,
-	bseg.h_budat as Data_receb_caixa
+	TO_DATE(bseg.augdt, 'YYYY-MM-DD') as Data_compensacao,
+	TO_DATE(bseg.h_budat, 'YYYY-MM-DD') as Data_receb_caixa
 from bseg
 	left join kna1 on bseg.kunnr = kna1.kunnr
 where bseg.h_blart in ('DZ', 'ZB', 'ZR')
