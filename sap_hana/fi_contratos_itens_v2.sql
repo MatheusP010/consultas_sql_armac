@@ -48,7 +48,7 @@ SELECT
     TO_DATE(dtcbc.vuntdat, 'YYYY-MM-DD') AS "Data Assinatura",
     TO_DATE(dtcbc.vbegdat, 'YYYY-MM-DD') AS "Início Contrato",
     TO_DATE(dtcbc.venddat, 'YYYY-MMM-DD') AS "Fim Contrato",
-    TO_DATE(dtcbc.vdemdat, 'YYYY-MM_DD') as "Data Desmontagem",
+    TO_DATE(dtcbc.vdemdat, 'YYYY-MM-DD') as "Data Desmontagem",
     vbkd.prsdt AS "Data Próximo Reajuste",
     ctr.kunnr_ana as "Cod. Cliente",
     CASE
